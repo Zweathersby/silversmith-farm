@@ -1,5 +1,6 @@
 .cardContainer {
   padding: 120px 100px 60px;
+  border-radius: 60px;
   background-color: var(--background-card);
   color: #03264d;
 }
@@ -7,6 +8,7 @@
 .card {
   border: 1px solid #00000020;
   padding: 2.5rem;
+  border-radius: 24px;
 }
 
 .card h6 {
@@ -17,4 +19,11 @@
 .card p {
   font-size: 14px;
   line-height: 150%;
+}
+
+.servicePug {
+  position: absolute;
+  top: -75px;
+  left: calc(50% - 75px);
+  border-radius: 50%;
 }

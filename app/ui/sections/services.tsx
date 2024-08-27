@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { card, cardContainer } from "@/app/ui/services.module.css";
+import { card, cardContainer, servicePug } from "@/app/ui/services.module.css";
 
 const serviceList = [
   {
@@ -30,21 +30,21 @@ const serviceList = [
 
 export default function Services() {
   return (
-    <section id="about">
+    <section id="services">
       <div className="container mx-auto relative">
         <Image
-          className="absolute rounded-full"
+          className={servicePug}
           src="/pug.jpg"
           alt="Pug headshot picture"
           width={150}
           height={150}
         />
-        <div className={`${cardContainer} rounded-lg`}>
+        <div className={cardContainer}>
           <h2 className="text-center">Services</h2>
           <div className="grid grid-cols-3 gap-6">
             {serviceList.map(({ title, description }, i) => {
               return (
-                <div key={title + i} className={`${card} rounded-lg`}>
+                <div key={title + i} className={card}>
                   <div className="flex flex-col justify-center gap-3">
                     <h6>{title}</h6>
                     <p>{description}</p>
