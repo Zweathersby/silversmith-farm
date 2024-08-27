@@ -1,0 +1,20 @@
+.cardContainer {
+  padding: 120px 100px 60px;
+  background-color: var(--background-card);
+  color: #03264d;
+}
+
+.card {
+  border: 1px solid #00000020;
+  padding: 2.5rem;
+}
+
+.card h6 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 150%;
+}
