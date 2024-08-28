@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Header from "@/app/ui/header/header";
+import Header from "@/app/ui/components/header/header";
 import styles from "@/app/ui/hero.module.css";
-import Curve from "@/app/ui/curve/curve";
+import Panel from "@/app/ui/components/panel/panel";
 import Link from "next/link";
 
 const { heroSection, heroContent, imageWrapper } = styles;
@@ -30,7 +30,7 @@ export default function Hero() {
           </p>
           <Link
             href="#contact"
-            className="flex h-[48px] items-center justify-center rounded-md bg-white p-3 text-sm text-black font-medium hover:opacity-50"
+            className="flex h-[48px] items-center justify-center rounded-md bg-white p-3 text-md text-black font-medium hover:opacity-50"
             scroll={true}
           >
             <p>Contact Us</p>
@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <Curve />
+      <Panel />
     </section>
   );
 }

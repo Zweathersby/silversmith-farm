@@ -2,7 +2,7 @@ import Hero from "@/app/ui/sections/hero";
 import Mission from "@/app/ui/sections/mission";
 import About from "@/app/ui/sections/about";
 import Services from "@/app/ui/sections/services";
-import Subtitle from "@/app/ui/subtitle/subtitle";
+import Subtitle from "@/app/ui/components/subtitle/subtitle";
 
 export default function Home() {
   return (
