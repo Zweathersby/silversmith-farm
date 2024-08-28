@@ -1,66 +1,42 @@
 import "./curve.css";
+import Subtitle from "@/app/ui/subtitle/subtitle";
+
+const panels = [
+  {
+    title: "365",
+    subtitle: "Days a year",
+  },
+  {
+    title: "7am - 9pm",
+    subtitle: "Business Hours",
+  },
+  {
+    title: "28",
+    subtitle: "Acre Farm",
+  },
+];
 
 export default function Curve() {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <div className="panels container mx-auto">
+        <div className="grid grid-cols-3 gap-3">
+          {panels.map(({ title, subtitle }, i) => {
+            return (
+              <div key={`${title}_${i}`} className="panel text-center">
+                <Subtitle className="mb-3">{title}</Subtitle>
+                <h6 className="font-medium">{subtitle}</h6>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <svg viewBox="0 0 1440 225" xmlns="http://www.w3.org/2000/svg">
         <path
-          fill="#fff"
-          d="M0,224L80,213.3C160,203,320,181,480,181.3C640,181,800,203,960,192C1120,181,1280,139,1360,117.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
+          d="M-6.55651e-06 224.823C-6.55651e-06 224.823 -20.1572 196.416 72.8402 137.815C165.838 79.214 320 96.523 480 96.823C640 96.523 940.117 96.823 960 96.823C979.883 96.823 1137.85 89.6517 1261.42 85.8299C1384.99 82.0081 1440 0.822992 1440 0.822992V224.823H1360C1280 224.823 1120 224.823 960 224.823C800 224.823 640 224.823 480 224.823C320 224.823 160 224.823 80 224.823H-6.55651e-06Z"
+          fill="white"
+        />
       </svg>
-      {/* <svg
-        className="hidden"
-        width="1440"
-        height="217"
-        viewBox="0 0 1440 217"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g filter="url(#filter0_d_15812_1002)">
-          <path
-            d="M436.423 140.741C230.016 94.4003 72.8719 146.016 0.681519 218.206H1440.7V25.4291C1368.77 97.3609 1247.34 115.954 1125.31 140.741C960.465 174.223 609.185 179.528 436.423 140.741Z"
-            fill="white"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_d_15812_1002"
-            x="-21.9185"
-            y="0.829077"
-            width="1485.22"
-            height="237.977"
-            filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
-          >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feColorMatrix
-              in="SourceAlpha"
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              result="hardAlpha"
-            />
-            <feOffset dy="-2" />
-            <feGaussianBlur stdDeviation="11.3" />
-            <feComposite in2="hardAlpha" operator="out" />
-            <feColorMatrix
-              type="matrix"
-              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-            />
-            <feBlend
-              mode="normal"
-              in2="BackgroundImageFix"
-              result="effect1_dropShadow_15812_1002"
-            />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="effect1_dropShadow_15812_1002"
-              result="shape"
-            />
-          </filter>
-        </defs>
-      </svg> */}
     </>
   );
 }

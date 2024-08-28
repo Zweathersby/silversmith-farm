@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Subtitle from "@/app/ui/subtitle/subtitle";
 
 export default function About() {
   return (
     <section id="about">
       <div className="container mx-auto">
-        <h2 className="text-center">About Us</h2>
+        <Subtitle className="text-center">About Us</Subtitle>
         <div className="grid grid-cols-5 gap-12">
           <Image
             className="rounded-lg col-span-2"

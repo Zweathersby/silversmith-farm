@@ -1,6 +1,16 @@
-svg {
+svg,
+.panels {
   position: absolute;
   bottom: -1px;
   left: 0;
   right: 0;
+}
+
+.panels {
+  z-index: 1;
+  bottom: 60px;
+  padding: 30px 60px;
+  border-radius: 36px;
+  background-color: var(--background);
+  box-shadow: 1px 1px 15px -10px rgba(0, 0, 0, 0.5);
 }

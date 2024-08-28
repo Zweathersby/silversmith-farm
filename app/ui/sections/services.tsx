@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Subtitle from "@/app/ui/subtitle/subtitle";
 import { card, cardContainer, servicePug } from "@/app/ui/services.module.css";
 
 const serviceList = [
@@ -40,7 +41,7 @@ export default function Services() {
           height={150}
         />
         <div className={cardContainer}>
-          <h2 className="text-center">Services</h2>
+          <Subtitle className="text-center">Services</Subtitle>
           <div className="grid grid-cols-3 gap-6">
             {serviceList.map(({ title, description }, i) => {
               return (

@@ -7,6 +7,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --background-card: #e6f4f670;
+  --background: white;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -19,7 +20,7 @@
 
 html,
 body {
-  background-color: white;
+  background-color: var(--background);
 }
 
 body {
@@ -39,7 +40,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Bitter";
   font-size: 56px;
   line-height: 112.5%;
 }

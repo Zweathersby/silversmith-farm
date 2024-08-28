@@ -2,6 +2,7 @@ import Hero from "@/app/ui/sections/hero";
 import Mission from "@/app/ui/sections/mission";
 import About from "@/app/ui/sections/about";
 import Services from "@/app/ui/sections/services";
+import Subtitle from "@/app/ui/subtitle/subtitle";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <About />
       <Services />
       <section id="contact">
-        <h2>Contact Us</h2>
+        <Subtitle>Contact Us</Subtitle>
       </section>
       <footer className="w-full">
         <div className="container mx-auto">
