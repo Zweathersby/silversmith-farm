@@ -1,4 +1,4 @@
-import Subtitle from "@/app/ui/components/subtitle/subtitle";
+import Subtitle from "@/app/ui/components/subtitle";
 
 export default function Mission() {
   return (

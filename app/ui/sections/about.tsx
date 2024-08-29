@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Subtitle from "@/app/ui/components/subtitle/subtitle";
+import Subtitle from "@/app/ui/components/subtitle";
 
 export default function About() {
   return (

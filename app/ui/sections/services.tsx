@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Subtitle from "@/app/ui/components/subtitle/subtitle";
+import Subtitle from "@/app/ui/components/subtitle";
 import { card, cardContainer, servicePug } from "@/app/ui/services.module.css";
 
 const serviceList = [
@@ -47,7 +47,7 @@ export default function Services() {
               return (
                 <div key={title + i} className={card}>
                   <div className="flex flex-col justify-center gap-3">
-                    <h6>{title}</h6>
+                    <h5>{title}</h5>
                     <p>{description}</p>
                   </div>
                 </div>

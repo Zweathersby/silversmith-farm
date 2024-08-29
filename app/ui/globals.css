@@ -7,7 +7,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --background-card: #e6f4f670;
+  --background-light-rgb: 241, 241, 241;
   --background: white;
+  --button-dark-rgb: 23, 23, 23;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -30,7 +32,6 @@ body {
 section {
   width: 100%;
   padding: 120px;
-  /* min-height: 100vh; */
 }
 
 h1 {
@@ -44,13 +45,45 @@ h2 {
   line-height: 112.5%;
 }
 
+h5 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  max-width: 1200px;
+}
+
+form {
+  background-color: rgb(var(--background-light-rgb));
+  border-radius: 1.5rem;
+  padding: 2.25rem;
+}
+
+/* input {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+} */
+
+textarea {
+  min-height: 48px;
+}
+
+button {
+  background-color: rgb(var(--button-dark-rgb));
+  color: #fff;
 }
 
 footer {
+  background-color: rgb(var(--background-light-rgb));
   padding: 30px;
 }
 

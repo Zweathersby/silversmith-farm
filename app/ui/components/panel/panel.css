@@ -1,14 +1,17 @@
-svg,
+svg.curve,
 .panels {
   position: absolute;
-  bottom: -1px;
   left: 0;
   right: 0;
 }
 
+svg.curve {
+  bottom: -1px;
+}
+
 .panels {
+  max-width: 85%;
   z-index: 1;
-  bottom: 60px;
   padding: 30px 60px;
   border-radius: 36px;
   background-color: var(--background);
