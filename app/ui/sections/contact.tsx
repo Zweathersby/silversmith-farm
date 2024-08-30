@@ -1,5 +1,5 @@
 import Subtitle from "@/app/ui/components/subtitle";
-import Input from "@/app/ui/components/input/input";
+import ContactForm from "@/app/ui/components/contact-form";
 
 import "../contact.module.css";
 
@@ -8,6 +8,8 @@ export default function Contact() {
     <section id="contact">
       <div className="container mx-auto">
         <Subtitle>Contact Us</Subtitle>
+
+        {/* Contact Information */}
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <p className="text-sm mb-5 lg:max-w-md">
@@ -32,42 +34,9 @@ export default function Contact() {
               (843) 559-3938
             </Subtitle>
           </div>
-          <form action="" className="flex flex-col gap-6">
-            <h5>Send an Email</h5>
-            <Input type="email" label="email" />
-            <Input type="text" label="name" />
-            <div>
-              <label htmlFor="message" className="text-sm mb-3 block">
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows={4}
-                placeholder="Let us know what you think."
-                className="peer block w-full rounded-md border border-gray-200 p-3 text-sm outline-2"
-              />
-            </div>
-            <button
-              type="submit"
-              className="flex h-[48px] self-end items-center justify-center gap-3 rounded-md px-6 text-sm font-medium"
-            >
-              Send
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="size-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-                />
-              </svg>
-            </button>
-          </form>
+
+          {/* Email Contact Form */}
+          <ContactForm />
         </div>
       </div>
     </section>
