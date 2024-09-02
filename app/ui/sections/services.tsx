@@ -3,7 +3,9 @@
 import Image from "next/image";
 import Subtitle from "@/app/ui/components/subtitle";
 import FadeInWhenVisible from "@/app/ui/fade-in";
-import { card, cardContainer, servicePug } from "@/app/ui/services.module.css";
+import styles from "@/app/ui/services.module.css";
+
+const { card, cardContainer, servicePug } = styles;
 
 const serviceList = [
   {
