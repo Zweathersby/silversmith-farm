@@ -17,3 +17,9 @@ svg.curve {
   background-color: var(--background);
   box-shadow: 1px 1px 15px -10px rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 767px) {
+  .panels {
+    padding: 24px;
+  }
+}

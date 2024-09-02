@@ -20,6 +20,11 @@
   }
 } */
 
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
 html,
 body {
   background-color: var(--background);
@@ -32,12 +37,6 @@ body {
 section {
   width: 100%;
   padding: 120px;
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 60px;
-  }
 }
 
 h1 {
@@ -91,6 +90,26 @@ button {
 footer {
   background-color: rgb(var(--background-light-rgb));
   padding: 30px;
+}
+
+@media (max-width: 1280px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 60px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h6 {
+    font-size: 0.85rem;
+  }
 }
 
 @layer utilities {

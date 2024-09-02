@@ -9,7 +9,7 @@ const { heroSection, heroContent, imageWrapper } = styles;
 export default function Hero() {
   return (
     <section id="hero" className={heroSection}>
-      <div className="container mx-auto">
+      <div className="container mx-auto grow-[1]">
         <div className={imageWrapper}>
           <Image
             src="/hero-dog.jpg"

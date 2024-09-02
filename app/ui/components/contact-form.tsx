@@ -23,7 +23,6 @@ export default function ContactForm() {
       message: formElements.message.value,
     };
     console.log("form: ", parsed);
-    // onSubmitUsername(formElements.usernameInput.value)
   }
 
   return (
