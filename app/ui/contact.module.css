@@ -1,4 +1,4 @@
-section#contact h2:hover svg {
+.phoneIcon:hover svg {
   animation: wiggle 0.5s infinite;
 }
 

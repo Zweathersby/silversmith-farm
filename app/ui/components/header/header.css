@@ -5,3 +5,7 @@ nav#header-nav {
   right: 0;
   padding: 25px 80px;
 }
+
+a {
+  transition: all 0.2s ease-in-out;
+}
