@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { motion } from "framer-motion";
 import "./header.css";
 
 const links = [
@@ -18,6 +19,15 @@ const links = [
   },
 ];
 
+const variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
+
 export default function Header({
   title,
   subtitle,
@@ -26,7 +36,15 @@ export default function Header({
   subtitle: string;
 }) {
   return (
-    <nav id="header-nav" className="flex justify-between gap-4">
+    <motion.nav
+      id="header-nav"
+      className="flex justify-between gap-4"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.35, delay: 0.2 }}
+      variants={variants}
+    >
       <Link
         href="#hero"
         className="flex h-[48px] justify-center bg-transparent text-md text-white font-bold"
@@ -48,6 +66,6 @@ export default function Header({
           );
         })}
       </div>
-    </nav>
+    </motion.nav>
   );
 }

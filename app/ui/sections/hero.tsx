@@ -20,6 +20,7 @@ export default function Hero() {
             layout="fill"
             objectFit="cover"
             objectPosition="bottom"
+            priority={true}
           />
         </div>
         <Header title="Silversmith Farm" subtitle="Boarding Kennel" />
